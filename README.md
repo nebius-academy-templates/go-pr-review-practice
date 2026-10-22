@@ -1,5 +1,6 @@
 # Go PR review fixtures
-This is a teaching repository with five independent review branches, each based on main.
+Five independent Go PR fixtures support the Building Your Go Agent lessons on the course
+platform. Follow the lesson for assignment steps; each review branch is based on main.
 The base contains model, API adapter, and repository packages. No application deployment
 or credentials are required. Use a supported Go release (language baseline in go.mod: 1.22).
 Validate locally using go test ./... and go vet ./... .
@@ -18,7 +19,8 @@ unset. Credential strings in review branches are synthetic examples, never real 
 
 Configure the reviewer in the separate
 [building-your-go-agent](https://github.com/nebius-academy-templates/building-your-go-agent)
-repository. Codex CLI and Claude Code use the same Go inputs. Record each reviewed head SHA;
+repository. Codex CLI and Claude Code use the same Go inputs; Codex Desktop is optional.
+Use the agent repository's hosted GitHub MCP setup from the walkthrough. Record each reviewed head SHA;
 case numbers are fixed while a PR's content can change. Each branch is based independently
 on main; do not stack or merge them. Keep the teaching defects intact.
 
